@@ -66,6 +66,8 @@ class ContextInitializer extends ContextApi {
       new SharedLibraryLoaderCentos8
     } else if (systemName.contains("Anolis") && systemVersion.startsWith("7")) {
       new SharedLibraryLoaderCentos7
+    } else if (system.contains("tencentos") && system.contains("3.2")) {
+      new SharedLibraryLoaderCentos8
     } else {
       throw new GlutenException(
         "Found unsupported OS! Currently, Gluten's Velox backend" +
