@@ -806,7 +806,7 @@ JNIEXPORT jlong JNICALL Java_io_glutenproject_vectorized_ShuffleWriterJniWrapper
       throw gluten::GlutenException(std::string("Shuffle DataFile can't be null"));
     }
     if (localDirsJstr == NULL) {
-      throw gluten::GlutenException(std::string("Shuffle DataFile can't be null"));
+      throw gluten::GlutenException(std::string("Shuffle localDirs can't be null"));
     }
 
     shuffleWriterOptions.write_eos = writeEOS;
